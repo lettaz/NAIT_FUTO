@@ -1,6 +1,6 @@
 
 #top{
-    background-image: url(../images/four.jpg);
+    background-image: url(../images/two.jpg);
     height:117vh;
     background-attachment: fixed;
     background-position: center;
@@ -124,7 +124,7 @@
     z-index: 100;
 } */
 .bck{
-    background-color: #402C14;
+    background-color: #fff;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
     animation-name: example;
@@ -132,16 +132,16 @@
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
+/* @-webkit-keyframes example {
     from {background-color:#000;}
     to {background-color: #fff;}
-}
+} */
 
 /* Standard syntax */
-@keyframes example {
+/* @keyframes example {
     from {background-color: #000;}
     to {background-color: #fff;}
-}
+} */
 
 .icon-play{
     position: relative;
@@ -153,17 +153,17 @@
 .p-carol{
     font-size: 35px;
     font-weight: bold;
-    color: #fff;
+    color: #0099FF;
 }
 .carousel-item{
     margin-top: 250px;
     margin-left: 0px;
 }
 .p-move{
-    color: #fff;
+    color: #000;
     font-size: 18px;
     font-weight: 10px;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 .p-move1{
     margin-top: -350px;
@@ -275,25 +275,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-/* .s-box{
-    background-color: #fff;
-    height: 200px;
-    width: 400px;
-    color: #000;
-    position: relative;
-    top: 100px;
-    left: 100px;
-    padding: 30px;
-    cursor: pointer;
-}
-.p-box{
-    margin-top: -30px;
-}
-.users-move{
-    position: relative;
-    left: 240px;
-    bottom: 160px;
-} */
+
 .build-h4{
     color:#0099FF;
 }
@@ -301,44 +283,7 @@
     position: relative;
     right: 20px;
 }
-/* .btnn{
-    background-color:#0099FF !important;
-    color: #fff !important;
-    border-radius: 2%;
-    position: relative;
-    left: 180px;
-    top: 150px;
-    height: 60px !important;
-    width: 300px !important;
-    font-size: 24px !important;
-    display: inline-block;
-    border-radius: 4px;
-    
-}
-.btnn span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .btnn span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .btnn:hover span {
-    padding-right: 25px;
-  }
-  
-  .btnn:hover span:after {
-    opacity: 1;
-    right: 0;
-  } */
+
 #gospel{
     /* -webkit-gradient(linear, top, rgba(0,0,0,0.5), rgba(200,20,200,0.5)), url('../images/plus.png'); */
 
@@ -571,7 +516,7 @@ input:invalid {
 
   @media screen and (max-width: 576px) {
     #top{
-        background-image: linear-gradient(rgba(223, 166, 166, 0.11),rgba(226, 27, 27, 0.11)),  url("../images/four.jpg"); 
+        background-image: linear-gradient(rgba(223, 166, 166, 0.11),rgba(226, 27, 27, 0.11)),  url("../images/two.jpg"); 
         width: 100%;
         height:100vh;
         background-attachment: fixed;
@@ -580,17 +525,17 @@ input:invalid {
         background-repeat: no-repeat;
     }
     .nav-link{
-        font-size: 18px;
         font-weight: 800;
         padding-top: 0px !important;
         margin-top: -10px !important;
         color:#000 !important;
         margin-right:0px;
-         font-size: 12px;
+         font-size: 20px;
          margin-left: 0px;
-         background-color: #402C14;
-         /* position: relative;
-         top: 80px; */
+         background-color:#fff;
+         position: relative;
+         top: 12px;
+         color: #0099FF !important;
     }
     .nav-move{
         margin-left: 0px !important;
@@ -598,13 +543,19 @@ input:invalid {
     .navbar{
         height:150px;
         position: fixed !important;
+        padding-top: 35px !important;
         
+    }
+    .icon-play{
+        position: relative;
+        top: 180px;
     }
     .mylogo{
         height:50px;
     }
     .p-carol{
         font-size: 25px;
+        display: none;
     }
     .p-move{
         display: none;
