@@ -42,7 +42,7 @@
    
 }
 #mynavbar{
-    height:90px !important;
+    /* height:90px !important; */
     position: fixed !important;
     z-index: 100;
     width: 100%;
@@ -186,13 +186,15 @@
 	height: 240px;
     width: 200px;
     padding: 20px;
-    -webkit-transition: width 4s, height 4s; /* For Safari 3.1 to 6.0 */
-    transition: width 4s, height 4s;
+    transition: transform .2s; /* Animation */
+    /* -webkit-transition: width 4s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 4s, height 4s; */
 }
 
 .card-img-top:hover {
-    width: 370px;
-    height: 280px;
+    /* width: 370px;
+    height: 280px; */
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .card-img-top1{
 	height: 180px;
@@ -508,16 +510,19 @@ input:invalid {
   }
 
 /*gallery page*/
-#g-top{
-    margin-top:160px;
+/* #g-top{
+    margin-top:160px; */
+
+#g-top1{
+    margin-top:px !important;
 }
-.g-nav{
-    margin-top: -160px;
+/* .g-nav{
+    margin-top: -160px; */
 }
 
 /*calender page*/
 #c-nav{
-    margin-top:-160px;
+    /* margin-top:-160px; */
 }
 #c-top{
     padding-top:160px;
@@ -536,11 +541,11 @@ input:invalid {
     .nav-link{
         font-weight: 200;
         padding-top: 5px !important;
-        margin-top: -5px !important;
+        margin-top: 1px !important;
         margin-right:0px;
          font-size: 18px;
          margin-left: 0px;
-         background-color::#071E1E;
+         background-color:#071E1E;
          position: relative;
          top: 48px;
          color: #0099FF !important;
@@ -548,17 +553,17 @@ input:invalid {
     .nav-move{
         margin-left: 0px !important;
     }
-    #mynavbar{
-        height:160px !important;
+    /* #mynavbar{
+        height:170px !important;
         position:relative !important;
         z-index: 100;
         width: 100%;
-        /* padding:40px 40px; */
+        padding:40px 40px;
         padding-top: 60px;
       transition: top 0.3s;
         
         
-    }
+    } */
     .bck{
         background-color:#071E1E;
     }
@@ -568,7 +573,7 @@ input:invalid {
         top: 180px;
     }
     .navbar-toggler{
-        position: ;
+
         background-color: #fff !important;
         border: 1px solid #0099FF !important;
         /* top:50px !important; */
@@ -584,7 +589,7 @@ input:invalid {
         display: none;
     }
     .f-card{
-        margin-top:280px;
+        margin-top:310px;
     }
     .collapse{
         /* background-color:#fff; */

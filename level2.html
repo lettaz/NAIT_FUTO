@@ -21,7 +21,7 @@
 <body>
         
 <section>
-        <nav class="navbar navbar-expand-lg navbar-light bck c-nav">
+        <nav id="mynavbar" class="navbar navbar-expand-lg navbar-light bck c-nav">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img class="mylogo" src="images/pp.jpg"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -392,6 +392,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+<script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("mynavbar").style.top = "0";
+          } else {
+            document.getElementById("mynavbar").style.top = "-155px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
 <script>
 $(document).ready(function(){
 $('.resp-int').owlCarousel({
