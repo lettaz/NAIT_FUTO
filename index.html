@@ -20,7 +20,7 @@
 </head>
 <body>
     <section id="top">
-        <nav class="navbar navbar-expand-lg navbar-light bck">
+        <nav id="mynavbar" class="navbar navbar-expand-lg navbar-light bck">
             <div class="container">
                 <a class="navbar-brand" href="#"><img class="mylogo" src="images/pp.jpg"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="d-flex justify-content-center  mt-5 icon-play">
-                                        <span class="text-dark align-self-center mr-2 font-12">WATCH VIDEO</span>
+                                        <span class="text-white align-self-center mr-2 font-12">WATCH VIDEO</span>
                                         <i class=" fas fa-play fa-3x align-self-center"style="color:#0099ff"></i>
                                     </div>
                                 </div>
@@ -186,17 +186,17 @@
                         <div class="row my-5">
                             <div class="col-sm-6 col-none pb-5">
                                 <h4 class="apple-font text-white font-weight-bold mb-5 text-monospace pt-5" height="3rem">THE DEFINITION OF US</h4>
-                                <p class="text-white apple-font text-justify text-monospace">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat inventore consequuntur qui exercitationem tempora laboriosam eaque evidence evan. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maxime?</p>
+                                <p class="text-white apple-font text-justify text-monospace g-font">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat inventore consequuntur qui exercitationem tempora laboriosam eaque evidence evan. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, maxime?</p>
                                 <div class="row mt-5 pb-5">
                                     <div class="col-sm-6 col-6 text-white font-weight-bold">
                                         <img src="images/dollar-bills.png" alt="" height="50px">
                                         <h4 class="font-weight-bold mt-4">Free quote</h4>
-                                        <h6 class="font-12 font-weight-light">Lorem ipsum doler apmo</h6>
+                                        <h6 class="font-14 font-weight-light">Lorem ipsum doler apmo</h6>
                                     </div>
                                     <div class="col-sm-6 col-6 text-white font-weight-bold">
                                         <img src="images/three-stacks-of-coins.png" alt="" height="53px">
                                         <h4 class="font-weight-bold mt-4">Easy payments</h4>
-                                        <h6 class="font-12 font-weight-light">Money back ipsum apmo</h6>
+                                        <h6 class="font-14 font-weight-light">Money back ipsum apmo</h6>
                                     </div>
                                 </div>
                             </div>
@@ -292,7 +292,7 @@
                                     <div class="col-md-6">
                                         <div class="col-md-12">
                                             <img class="card-img-top1" src="images/tech1.jpg">
-                                            <img class="card-img-top1" src="images/tech1.jpg">
+                                            <img class="card-img-top1" src="images/two.jpg">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -508,6 +508,18 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
      <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+     <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("mynavbar").style.top = "0";
+              } else {
+                document.getElementById("mynavbar").style.top = "-105px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+            </script>
      <script>
      $(document).ready(function(){
          $('.resp-int').owlCarousel({
