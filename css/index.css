@@ -156,9 +156,10 @@
 	color:rgb(22, 211, 79);
 }
 .p-carol{
-    font-size: 35px;
+    font-size: 35px !important;
     font-weight: bold;
     color: #0099FF;
+    font-family: montserratbold;
     
 }
 .carousel-item{
@@ -587,8 +588,9 @@ input:invalid {
     }
     .navbar-toggler{
 
-        
         border: 1px solid #0099FF !important;
+        background-color: #fff !important;
+    
         /* top:50px !important; */
     }
     .mylogo{
@@ -596,7 +598,11 @@ input:invalid {
     }
     .p-carol{
         font-size: 25px;
-        display: none;
+        /* display: none; */
+        margin-top: -140px;
+        font-size: 20px !important;
+        margin-left: 40px;
+        font-family: montserratbold;
     }
     .p-move{
         display: none;
@@ -639,6 +645,15 @@ input:invalid {
     }
     .b-left{
         margin-bottom: 15px;
+    }
+    .card-back{
+        height: 300px;
+    }
+    .card-back2{
+        height: 300px;
+    }
+    .card-back3{
+        height:300px;
     }
 }
 
