@@ -450,9 +450,7 @@
     height: 50px !important;
     width: 50px !important;
 }
-.roll{
-    /* margin-left: -40px; */
-}
+
 .roll li{
     margin-bottom: -5px;
   
@@ -522,14 +520,8 @@ input:invalid {
 #g-top1{
     margin-top:px !important;
 }
-/* .g-nav{
-    margin-top: -160px; */
-}
 
-/*calender page*/
-#c-nav{
-    /* margin-top:-160px; */
-}
+
 #c-top{
     padding-top:160px;
 }
@@ -609,10 +601,6 @@ input:invalid {
     }
     .f-card{
         margin-top:310px;
-    }
-    .collapse{
-        /* background-color:#fff; */
-        /* height: 90px;  */
     }
     .card-img-top3{
         display: none;
